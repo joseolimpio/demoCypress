@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/fixtures/userData.json
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs e env
+*.log
+.env
