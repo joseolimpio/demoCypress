@@ -31,8 +31,8 @@ This repository contains various **Cypress** test automation examples for web ap
 💻 How to Run the Tests?
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/cypress-testing-playground.git
-   cd cypress-testing-playground
+   git clone https://github.com/joseolimpio/demoCypress.git
+   cd demoCypress
    ```
 
 2. Install dependencies:
