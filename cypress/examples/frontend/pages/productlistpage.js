@@ -1,4 +1,4 @@
-const productlistpage = {
+const productListPage = {
     getsearchField: function() {
         return cy.get('[name="field-keywords"]') 
     },
@@ -13,4 +13,4 @@ const productlistpage = {
     }
 };
 
-export default productlistpage;
+export default productListPage;

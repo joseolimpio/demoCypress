@@ -1,6 +1,6 @@
 import frontPage from './pages/frontpage';
 import loginPage from './pages/loginpage';
-import productlistpage from './pages/productlistpage';
+import productListPage from './pages/productlistpage';
 
 describe('Navigate through the User flow on Amazon.com', () => {
     beforeEach(() => {
@@ -16,9 +16,9 @@ describe('Navigate through the User flow on Amazon.com', () => {
       loginPage.logInTestAccount();
     });
     it('Add an item to the Cart', () => {
-      productlistpage.getsearchField().type('Paper clip')
-      productlistpage.getSearchtBtn().click()
-      productlistpage.getAddToCartBtn().first().click();
-      productlistpage.getCartItemNumber().should('not.have.text', '0');
+      productListPage.getsearchField().type('Paper clip')
+      productListPage.getSearchtBtn().click()
+      productListPage.getAddToCartBtn().first().click();
+      productListPage.getCartItemNumber().should('not.have.text', '0');
     });
   });
