@@ -1,25 +1,20 @@
 const loginPage = {
-    getEmailField: function() {
-        return cy.get('#ap_email');
-    },
-    getEmailConfirmBtn: function() {
-        return cy.get('#continue');
+    getUsernameField: function() {
+        return cy.get('[data-test="username"]');
     },
     getPasswordField: function() {
-        return cy.get('#ap_password');
+        return cy.get('[data-test="password"]');
     },
-    getPassConfirmBtn: function() {
-        return cy.get('#signInSubmit');
+    getLoginButton: function() {
+        return cy.get('[data-test="login-button"]');
     },
-    logInTestAccount: function() {
+    login: function() {
         cy.fixture('userData').then((data) => {
-            this.getEmailField().type(data.email);
-            this.getEmailConfirmBtn().click();
-            this.getPasswordField().type(data.pass);
-            this.getPassConfirmBtn().click();
+            this.getUsernameField().type(data.username);
+            this.getPasswordField().type(data.password);
+            this.getLoginButton().click();
         });
     },
-
 };
 
 export default loginPage;

@@ -4,7 +4,9 @@ node_modules/
 # Cypress
 cypress/screenshots/
 cypress/videos/
-cypress/fixtures/userData.json
+
+# Claude Code
+.claude/
 
 # Arquivos do sistema
 .DS_Store
